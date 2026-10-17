@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "speedtest-myip",
+  "title": "Speedtest + MyIP",
+  "description": "Independent Ookla speed testing and public connection details for Tinycast",
+  "icon": "icon.svg",
+  "author": "cojonesnaut",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Utilities"
+  ],
+  "commands": [
+    {
+      "name": "speedtest",
+      "title": "Speedtest",
+      "description": "Test download, upload, latency and jitter using Ookla",
+      "mode": "view"
+    },
+    {
+      "name": "my-ip",
+      "title": "My IP Lookup",
+      "description": "Show public IP address, reverse-DNS host, remote port, ISP, and country",
+      "mode": "view"
+    },
+    {
+      "name": "network-check",
+      "title": "Network Check",
+      "description": "Check internet access with green online and red offline status",
+      "mode": "view"
+    }
+  ],
+  "scripts": {
+    "build": "node build.cjs"
+  },
+  "version": "1.3.0"
+}
